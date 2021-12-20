@@ -12,16 +12,17 @@
         android:background="@color/white"
         android:layout_margin="@dimen/default_margin">
 
-    <TextView
-        android:id="@+id/details_name"
-        android:textSize="@dimen/details_name_size"
-        android:textColor="@color/black"
-        android:layout_margin="@dimen/default_margin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/update_name"
+            android:hint="Введите название.."
+            android:textSize="@dimen/details_name_size"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <View
             android:id="@+id/view"
@@ -31,11 +32,12 @@
             android:background="@color/date_card_color"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/details_name" />
+            app:layout_constraintTop_toBottomOf="@id/update_name" />
 
-        <TextView
-            android:id="@+id/details_description"
+        <EditText
+            android:id="@+id/update_description"
             android:layout_margin="@dimen/default_margin"
+            android:hint="Введите описание..."
             android:textSize="@dimen/description_size"
             android:textColor="@color/black"
             android:layout_width="match_parent"
@@ -44,5 +46,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/date_card_color"
+            android:src="@drawable/ic_baseline_check_24"
+            android:layout_margin="@dimen/button_list_margin"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

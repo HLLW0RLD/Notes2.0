@@ -5,4 +5,6 @@
     <dimen name="toolbar_list_margin">5dp</dimen>
     <dimen name="app_name">35dp</dimen>
     <dimen name="button_list_margin">25dp</dimen>
+    <dimen name="description_size">20dp</dimen>
+    <dimen name="details_name_size">30dp</dimen>
 </resources>
